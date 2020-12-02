@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MesApplications</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ServletTraitement</servlet-name>
+  	<servlet-class>fr.applications.appli1.ServletTraitement</servlet-class>
+  	<init-param>
+      <param-name>MINI</param-name>
+      <param-value>4</param-value>
+   </init-param>
+    <init-param>
+      <param-name>MAXI</param-name>
+      <param-value>6</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ServletTraitement</servlet-name>
+  	<url-pattern>/applis/appli1/ServletTraitement</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  	<servlet-name>accueil</servlet-name>
+  	<jsp-file>/WEB-INF/applis/repas/accueil.jsp</jsp-file>
+ </servlet>
+ 
+ <servlet-mapping>
+	<servlet-name>accueil</servlet-name>
+	<url-pattern>/applis/repas/accueil</url-pattern>
+ </servlet-mapping> -->
+		
+</web-app>
+
+
+
